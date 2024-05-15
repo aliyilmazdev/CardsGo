@@ -1,10 +1,10 @@
 package main
 
 	func main() {
-		cards := newDeck()
-		cards.print()	
+		cards := newDeckFromFile("savedFile")
+		
+		cards.shuffle()
+		cards.print()
 }
 
-func newCard() string {
-	return "TestCard3"
-}
+
